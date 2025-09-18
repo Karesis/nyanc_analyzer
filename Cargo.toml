@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+nyanc_core ={ path = "../core" }
+hir ={ path = "../hir" }
+parser = { path = "../parser" }
+ast ={ path = "../ast" }
+reporter ={ path = "../reporter" }
+lexer ={ path = "../lexer" }

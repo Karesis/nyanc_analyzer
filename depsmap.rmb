@@ -1,0 +1,22 @@
+(第 3 层: 命令行入口)
+                nyanc
+                  |
+                  v
+      (第 2 层: 编译驱动/会话管理)
+             nyan_driver
+           /  |   |   |  \
+          /   |   |   |   \
+         /    |   |   |    \
+        v     v   v   v     v
+      (第 1 层: 各个编译阶段/工具)
+      analyzer  parser  lexer  reporter  ...
+          | \     |      |        |
+          |  \    v      v        v
+          |   `-> ast <----------+
+          |       |
+          v       v
+         hir ----'
+          |
+          v
+      (第 0 层: 核心数据定义)
+       nyan_core
